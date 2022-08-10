@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* importing fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+html,
+body,
+label {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+button:hover,
+input[type='color']:hover {
+  transform: scale(1.05);
+}
+
+input[type='color']:active {
+  transition: transform 0.05s ease-in-out;
+  transform: scale(1);
+}
+
+input[type='color'] {
+  -webkit-appearance: none;
+  width: 80px;
+  height: 80px;
+  border: none;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  background-color: #b9b7a7;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background: #b9b7a7;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+  margin-top: -8px;
+  background: #4e5166;
+}
+.active_ {
+  background-color: #7c90a0;
+}

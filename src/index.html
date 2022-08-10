@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c6327cf6d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/public/styles.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-main pt-10">
+    <header class>
+      <h1
+        class="text-center text-5xl cursor-default mb-10 md:text-7xl font-extrabold drop-shadow-lg leading-tight text-dark"
+      >
+        Etch-a-sketch
+      </h1>
+    </header>
+    <main
+      class="flex flex-col-reverse gap-10 pb-10 items-center md:py-5 md:justify-center md:flex-row md:gap-20"
+    >
+      <div
+        id="settings"
+        class="flex flex-col w-56 justify-center gap-6 md:gap-10"
+      >
+        <input
+          type="color"
+          class="bg-main m-auto"
+          id="colorInput"
+          value="#4E5166"
+        />
+        <button
+          class="bg-dark text-xl font-medium rounded-l px-3 py-2 drop-shadow-lg text-white"
+          id="colorMode"
+        >
+          Color mode
+        </button>
+        <button
+          class="bg-dark text-xl font-medium rounded-l px-3 py-2 drop-shadow-lg text-white"
+          id="rainbowMode"
+        >
+          Rainbow mode
+        </button>
+        <button
+          class="bg-dark text-xl font-medium rounded-l px-3 py-2 drop-shadow-lg text-white"
+          id="eraser"
+        >
+          Eraser
+        </button>
+        <button
+          class="bg-dark text-xl font-medium rounded-l px-3 py-2 drop-shadow-lg text-white"
+          id="clear"
+        >
+          Clear
+        </button>
+        <div
+          id="sizeValue"
+          class="text-xl cursor-default font-medium text-center"
+        >
+          16 x 16
+        </div>
+        <input type="range" id="range" min="1" max="64" value="16" class="cursor-pointer" />
+      </div>
+      <div
+        id="grid"
+        class="grid w-[300px] h-[300px] md:w-[500px] md:h-[500px] drop-shadow-lg bg-white"
+      ></div>
+    </main>
+    <footer
+      class="flex h-20 flex-row px-10 items-center md:items-end justify-center"
+    >
+      <p class="text-xl cursor-default">
+        Copyright © 2022 David Soldat
+        <span
+          ><a target="_blank" href="https://github.com/DavidSoldat"
+            ><i class="fa-brands fa-github hover:scale-125"></i></a
+        ></span>
+      </p>
+    </footer>
+    <script src="/src/script.js"></script>
+  </body>
+</html>

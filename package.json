@@ -1,0 +1,22 @@
+{
+  "name": "etch-a-sketch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss build -i ./src/styles.css -o ./public/styles.css",
+    "watch-css": "tailwindcss build -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidSoldat/Etch-A-Sketch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidSoldat/Etch-A-Sketch/issues"
+  },
+  "homepage": "https://github.com/DavidSoldat/Etch-A-Sketch#readme"
+}
